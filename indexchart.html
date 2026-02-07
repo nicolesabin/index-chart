@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- WSU FINANCIAL AID — Utah Resident Index Chart. Search "WSU FINANCIAL AID" in this file to find the chart block for updates. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WSU Academic Scholarships for New Freshmen - Utah Resident. Index score by SAT/ACT and GPA, plus named scholarship amounts.">
+    <title>WSU Academic Scholarships for New Freshmen (Utah Resident) | Financial Aid</title>
+    <link rel="stylesheet" href="wsu-css/importfonts.css">
+    <link rel="stylesheet" href="wsu-css/framework.css">
+    <link rel="stylesheet" href="wsu-css/basecode.css">
+    <link rel="stylesheet" href="financial-aid-charts.css">
+</head>
+<!-- ========== WSU FINANCIAL AID: Utah Resident Index Chart - START (search "WSU FINANCIAL AID" to find this block for updates) ========== -->
+<div class="chart-page">
+    <div class="container">
+    <h1>WSU Academic Scholarships for New Freshmen (Utah Resident)</h1>
+    <p class="lead">Academic scholarships are based on high school cumulative GPA and composite ACT/SAT score. Use the table below to find your <strong>index score</strong>, then see which scholarship you may receive. (Data from <a href="https://docs.google.com/spreadsheets/d/1ML-_Agw_gQ0YRaaqIdSUY_KmZpa9K03rL5AtVsuVcLM/edit?usp=sharing">new-utah-freshman</a> sheet.)</p>
+
+    <section class="index-calculator" aria-labelledby="calc-heading">
+        <h2 id="calc-heading">Find your scholarship</h2>
+        <p class="index-calculator-desc">Enter your test score and GPA to see your index score and eligible scholarship.</p>
+        <form id="index-calc-form" class="index-calc-form" novalidate>
+            <div class="index-calc-row">
+                <fieldset class="index-calc-fieldset">
+                    <legend>Test score</legend>
+                    <div class="index-calc-radio-group">
+                        <label class="index-calc-radio">
+                            <input type="radio" name="test-type" value="sat" checked>
+                            <span>SAT</span>
+                        </label>
+                        <label class="index-calc-radio">
+                            <input type="radio" name="test-type" value="act">
+                            <span>ACT</span>
+                        </label>
+                    </div>
+                    <label for="index-calc-score" class="index-calc-label">Score</label>
+                    <input type="number" id="index-calc-score" name="score" min="400" max="1600" value="" placeholder="e.g. 1200" aria-describedby="index-calc-score-hint">
+                    <span id="index-calc-score-hint" class="index-calc-hint">SAT 400–1600 or ACT 14–36</span>
+                </fieldset>
+                <div class="index-calc-gpa">
+                    <label for="index-calc-gpa" class="index-calc-label">High school GPA</label>
+                    <input type="number" id="index-calc-gpa" name="gpa" min="2" max="4" step="0.1" value="" placeholder="e.g. 3.5" aria-describedby="index-calc-gpa-hint">
+                    <span id="index-calc-gpa-hint" class="index-calc-hint">2.0 – 4.0</span>
+                </div>
+            </div>
+            <div class="index-calc-actions">
+                <button type="submit" class="index-calc-submit">Calculate my scholarship</button>
+            </div>
+        </form>
+        <div id="index-calc-result" class="index-calc-result" aria-live="polite" aria-atomic="true" hidden></div>
+    </section>
+
+    <div class="table-wrap index-chart-wrap" id="utah-index-chart">
+        <table class="index-chart-table" role="table" aria-label="Utah resident index score: find your SAT or ACT score and GPA to get your index score">
+            <caption>Index score — Test score and GPA</caption>
+            <thead>
+                <tr class="header-group">
+                    <th scope="colgroup" colspan="2" id="th-test" class="header-test-score">Test Score</th>
+                    <th scope="colgroup" colspan="21" id="th-gpa" class="header-gpa">GPA</th>
+                </tr>
+                <tr class="header-sub">
+                    <th scope="col" colspan="2" class="sub-test-score" headers="th-test">SAT / ACT</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">4.0</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">3.9</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">3.8</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">3.7</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">3.6</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">3.5</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">3.4</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">3.3</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">3.2</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">3.1</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">3.0</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">2.9</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">2.8</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">2.7</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">2.6</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">2.5</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">2.4</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">2.3</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">2.2</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">2.1</th>
+                    <th scope="col" class="sub-gpa" headers="th-gpa">2.0</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><th scope="row">1570 – 1600</th><td>36</td><td>142</td><td>140</td><td>139</td><td>137</td><td>135</td><td>133</td><td>132</td><td>130</td><td>128</td><td>126</td><td>124</td><td>123</td><td>121</td><td>119</td><td>117</td><td>116</td><td>114</td><td>112</td><td>110</td><td>108</td><td>106</td></tr>
+                <tr><th scope="row">1530 – 1560</th><td>35</td><td>140</td><td>138</td><td>137</td><td>135</td><td>133</td><td>131</td><td>130</td><td>128</td><td>126</td><td>124</td><td>122</td><td>121</td><td>119</td><td>117</td><td>115</td><td>114</td><td>112</td><td>110</td><td>108</td><td>106</td><td>105</td></tr>
+                <tr><th scope="row">1490 – 1520</th><td>34</td><td>138</td><td>136</td><td>135</td><td>133</td><td>131</td><td>129</td><td>128</td><td>126</td><td>124</td><td>122</td><td>120</td><td>119</td><td>117</td><td>115</td><td>113</td><td>112</td><td>110</td><td>108</td><td>106</td><td>104</td><td>103</td></tr>
+                <tr><th scope="row">1450 – 1480</th><td>33</td><td>136</td><td>134</td><td>133</td><td>131</td><td>129</td><td>127</td><td>126</td><td>124</td><td>122</td><td>120</td><td>118</td><td>117</td><td>115</td><td>113</td><td>111</td><td>110</td><td>108</td><td>106</td><td>104</td><td>102</td><td>101</td></tr>
+                <tr><th scope="row">1420 – 1440</th><td>32</td><td>134</td><td>132</td><td>131</td><td>129</td><td>127</td><td>125</td><td>124</td><td>122</td><td>120</td><td>118</td><td>116</td><td>115</td><td>113</td><td>112</td><td>109</td><td>108</td><td>106</td><td>104</td><td>102</td><td>100</td><td>99</td></tr>
+                <tr><th scope="row">1390 – 1410</th><td>31</td><td>133</td><td>131</td><td>130</td><td>128</td><td>126</td><td>124</td><td>123</td><td>121</td><td>119</td><td>117</td><td>115</td><td>114</td><td>112</td><td>110</td><td>108</td><td>107</td><td>105</td><td>103</td><td>101</td><td>99</td><td>98</td></tr>
+                <tr><th scope="row">1360 – 1380</th><td>30</td><td>131</td><td>129</td><td>128</td><td>126</td><td>124</td><td>122</td><td>121</td><td>119</td><td>117</td><td>115</td><td>113</td><td>112</td><td>110</td><td>108</td><td>106</td><td>105</td><td>103</td><td>101</td><td>99</td><td>97</td><td>96</td></tr>
+                <tr><th scope="row">1330 – 1350</th><td>29</td><td>129</td><td>127</td><td>126</td><td>124</td><td>122</td><td>120</td><td>119</td><td>117</td><td>115</td><td>113</td><td>111</td><td>110</td><td>108</td><td>106</td><td>104</td><td>103</td><td>101</td><td>99</td><td>97</td><td>95</td><td>94</td></tr>
+                <tr><th scope="row">1300 – 1320</th><td>28</td><td>127</td><td>125</td><td>124</td><td>122</td><td>120</td><td>118</td><td>117</td><td>115</td><td>113</td><td>111</td><td>110</td><td>108</td><td>106</td><td>105</td><td>102</td><td>101</td><td>99</td><td>97</td><td>95</td><td>93</td><td>92</td></tr>
+                <tr><th scope="row">1260 – 1290</th><td>27</td><td>126</td><td>124</td><td>123</td><td>121</td><td>119</td><td>117</td><td>116</td><td>114</td><td>112</td><td>110</td><td>108</td><td>107</td><td>105</td><td>103</td><td>101</td><td>100</td><td>98</td><td>96</td><td>94</td><td>92</td><td>91</td></tr>
+                <tr><th scope="row">1230 – 1250</th><td>26</td><td>124</td><td>122</td><td>121</td><td>119</td><td>117</td><td>115</td><td>114</td><td>112</td><td>110</td><td>108</td><td>106</td><td>105</td><td>103</td><td>101</td><td>99</td><td>98</td><td>96</td><td>94</td><td>92</td><td>90</td><td>89</td></tr>
+                <tr><th scope="row">1200 – 1220</th><td>25</td><td>122</td><td>120</td><td>119</td><td>117</td><td>115</td><td>113</td><td>112</td><td>110</td><td>108</td><td>106</td><td>104</td><td>103</td><td>101</td><td>99</td><td>97</td><td>96</td><td>94</td><td>92</td><td>90</td><td>88</td><td>87</td></tr>
+                <tr><th scope="row">1160 – 1190</th><td>24</td><td>120</td><td>118</td><td>117</td><td>115</td><td>113</td><td>111</td><td>110</td><td>108</td><td>106</td><td>104</td><td>102</td><td>101</td><td>99</td><td>97</td><td>95</td><td>94</td><td>92</td><td>90</td><td>88</td><td>86</td><td>85</td></tr>
+                <tr><th scope="row">1130 – 1150</th><td>23</td><td>118</td><td>116</td><td>115</td><td>113</td><td>111</td><td>109</td><td>108</td><td>107</td><td>104</td><td>102</td><td>100</td><td>99</td><td>97</td><td>96</td><td>93</td><td>92</td><td>90</td><td>88</td><td>86</td><td>84</td><td>83</td></tr>
+                <tr><th scope="row">1100 – 1120</th><td>22</td><td>117</td><td>115</td><td>114</td><td>112</td><td>110</td><td>108</td><td>107</td><td>105</td><td>102</td><td>101</td><td>99</td><td>98</td><td>96</td><td>94</td><td>92</td><td>91</td><td>89</td><td>87</td><td>85</td><td>83</td><td>82</td></tr>
+                <tr><th scope="row">1060 – 1090</th><td>21</td><td>115</td><td>113</td><td>112</td><td>110</td><td>108</td><td>106</td><td>105</td><td>103</td><td>101</td><td>99</td><td>97</td><td>96</td><td>94</td><td>92</td><td>90</td><td>89</td><td>87</td><td>85</td><td>83</td><td>81</td><td>80</td></tr>
+                <tr><th scope="row">1030 – 1050</th><td>20</td><td>113</td><td>111</td><td>110</td><td>108</td><td>106</td><td>104</td><td>103</td><td>101</td><td>99</td><td>97</td><td>95</td><td>94</td><td>92</td><td>90</td><td>88</td><td>87</td><td>85</td><td>83</td><td>81</td><td>79</td><td>78</td></tr>
+                <tr><th scope="row">990 – 1020</th><td>19</td><td>111</td><td>109</td><td>108</td><td>106</td><td>104</td><td>102</td><td>101</td><td>99</td><td>97</td><td>95</td><td>93</td><td>92</td><td>90</td><td>88</td><td>86</td><td>85</td><td>83</td><td>81</td><td>79</td><td>77</td><td>76</td></tr>
+                <tr><th scope="row">960 – 980</th><td>18</td><td>109</td><td>107</td><td>106</td><td>104</td><td>102</td><td>100</td><td>99</td><td>97</td><td>95</td><td>93</td><td>91</td><td>90</td><td>88</td><td>87</td><td>84</td><td>83</td><td>81</td><td>79</td><td>77</td><td>75</td><td>74</td></tr>
+                <tr><th scope="row">920 – 950</th><td>17</td><td>108</td><td>106</td><td>105</td><td>103</td><td>101</td><td>99</td><td>98</td><td>96</td><td>94</td><td>92</td><td>90</td><td>89</td><td>87</td><td>85</td><td>83</td><td>82</td><td>80</td><td>78</td><td>76</td><td>74</td><td>73</td></tr>
+                <tr><th scope="row">880 – 910</th><td>16</td><td>106</td><td>104</td><td>103</td><td>101</td><td>99</td><td>97</td><td>96</td><td>94</td><td>92</td><td>90</td><td>88</td><td>87</td><td>85</td><td>83</td><td>81</td><td>80</td><td>78</td><td>76</td><td>74</td><td>72</td><td>71</td></tr>
+                <tr><th scope="row">830 – 870</th><td>15</td><td>104</td><td>102</td><td>101</td><td>99</td><td>97</td><td>95</td><td>94</td><td>92</td><td>90</td><td>88</td><td>86</td><td>85</td><td>83</td><td>81</td><td>79</td><td>78</td><td>76</td><td>74</td><td>72</td><td>70</td><td>69</td></tr>
+                <tr><th scope="row">780 – 820</th><td>14</td><td>102</td><td>100</td><td>99</td><td>97</td><td>95</td><td>93</td><td>92</td><td>90</td><td>88</td><td>86</td><td>84</td><td>83</td><td>81</td><td>79</td><td>77</td><td>76</td><td>74</td><td>72</td><td>70</td><td>68</td><td>67</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="note" role="note">
+        <p><strong>How to use:</strong> Find your SAT range in the first column (or ACT in the second). Find your high school GPA in the top row. The cell where they meet is your <strong>index score</strong>. Use the scholarship table below to see your award.</p>
+        <p><strong>SAT note:</strong> SAT composite is math and reading scores only.</p>
+    </div>
+
+    <h2 id="scholarship-table">Scholarships by index score</h2>
+    <div class="table-wrap">
+        <table role="table" aria-label="Utah resident academic scholarships by index score tier">
+            <caption>Scholarship by index score tier — Utah residents</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Index Score</th>
+                    <th scope="col">Scholarship</th>
+                    <th scope="col">Annual Amount</th>
+                    <th scope="col">Four-Year Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="scholarship-row band-moench"><th scope="row">128+</th><td>Presidential Scholarship</td><td>100% tuition &amp; fees</td><td>~$26,000</td></tr>
+                <tr class="scholarship-row band-dixon"><th scope="row">122 – 127</th><td>Trustees Scholarship</td><td>$3,500 per year</td><td>$14,000</td></tr>
+                <tr class="scholarship-row band-tracy"><th scope="row">114 – 121</th><td>Deans Scholarship</td><td>$2,000 per year</td><td>$8,000</td></tr>
+                <tr class="scholarship-row band-miller"><th scope="row">105 – 113</th><td>Merit Scholarship</td><td>$1,500 per year</td><td>$6,000</td></tr>
+                <tr class="scholarship-row band-success"><th scope="row">99 – 104</th><td>Success Scholarship</td><td>$1,000 per year</td><td>$4,000</td></tr>
+                <tr class="scholarship-row"><th scope="row">Below 99</th><td class="no-award" colspan="3" aria-label="No scholarship">—</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="note" role="note">
+        <p>Scholarships apply to in-state tuition only (except Presidential, which includes fees). Maintain full-time status (12 credits) and a 2.5 WSU cumulative GPA. Presidential requires 3 Honors credits in the first year. Verify at <a href="https://www.weber.edu/FinancialAid/">Financial Aid & Scholarships</a> and <a href="https://www.weber.edu/FinancialAid/resident.html">Aid for Utah Residents New to WSU</a>. Data from <a href="https://docs.google.com/spreadsheets/d/1ML-_Agw_gQ0YRaaqIdSUY_KmZpa9K03rL5AtVsuVcLM/edit?usp=sharing">new-utah-freshman</a>.</p>
+    </div>
+    <!-- WSU FINANCIAL AID: Utah Resident Index Chart - INLINE SCRIPT (crosshair). External script below = calculator (utah-index-calculator.js). -->
+    <script>
+(function () {
+    var wrap = document.getElementById('utah-index-chart');
+    if (!wrap) return;
+    var table = wrap.querySelector('.index-chart-table');
+    if (!table) return;
+    function bandClass(n) {
+        if (n >= 128) return 'band-moench';
+        if (n >= 122) return 'band-dixon';
+        if (n >= 114) return 'band-tracy';
+        if (n >= 105) return 'band-miller';
+        if (n >= 99) return 'band-success';
+        return 'band-below';
+    }
+    table.querySelectorAll('tbody tr').forEach(function (tr) {
+        var cells = tr.querySelectorAll('td');
+        cells.forEach(function (td, i) {
+            if (i === 0) return;
+            var num = parseInt(td.textContent.trim(), 10);
+            if (!isNaN(num)) td.classList.add(bandClass(num));
+        });
+    });
+    function highlightCell(ev) {
+        var cell = ev.target.closest('td, th');
+        if (!cell || !table.contains(cell)) return;
+        var tr = cell.closest('tr');
+        var col = cell.cellIndex + 1;
+        var tbody = table.querySelector('tbody');
+        var rowIndex = tbody && tr.parentNode === tbody ? Array.prototype.indexOf.call(tbody.rows, tr) + 1 : 0;
+        wrap.setAttribute('data-hover-col', String(col));
+        wrap.setAttribute('data-hover-row', String(rowIndex));
+    }
+    function clearHighlight() {
+        wrap.removeAttribute('data-hover-col');
+        wrap.removeAttribute('data-hover-row');
+    }
+    table.addEventListener('mouseenter', highlightCell, true);
+    table.addEventListener('mouseleave', clearHighlight);
+})();
+    </script>
+    <script src="utah-index-calculator.js"></script>
+    </div>
+</div>
+<!-- ========== WSU FINANCIAL AID: Utah Resident Index Chart - END ========== -->
+</html>

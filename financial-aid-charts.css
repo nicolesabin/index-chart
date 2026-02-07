@@ -1,0 +1,788 @@
+/* Accessible Financial Aid Index Charts - Weber State University */
+
+
+.chart-page main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.chart-page .lead {
+    font-size: 1.125rem;
+    color: #2d2d30;
+    margin-bottom: 2rem;
+}
+
+.chart-page .lead a {
+    color: #492365;
+    text-decoration: underline;
+}
+.chart-page .lead a:hover {
+    color: #2d1a4e;
+}
+.chart-page .note a {
+    color: #492365;
+    text-decoration: underline;
+}
+.chart-page .note a:hover {
+    color: #2d1a4e;
+}
+
+/* Index calculator — Find your scholarship (modern card style) */
+.chart-page .index-calculator {
+    margin-bottom: 2.5rem;
+    padding: 1.75rem 1.5rem;
+    background: linear-gradient(180deg, #faf9fc 0%, #f3f0f7 100%);
+    border: 1px solid #e5e0ec;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(45, 26, 78, 0.06);
+    border-left: 4px solid #492365;
+}
+.chart-page .index-calculator h2 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #2d1a4e;
+}
+.chart-page .index-calculator-desc {
+    margin-bottom: 1.5rem;
+    color: #4a4652;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.chart-page .index-calc-form .index-calc-fieldset {
+    border: 1px solid #e5e0ec;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin: 0 0 1rem 0;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.chart-page .index-calc-form .index-calc-fieldset legend {
+    font-weight: 600;
+    color: #2d1a4e;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.9375rem;
+    background: transparent;
+    border: none;
+    float: none;
+}
+.chart-page .index-calc-radio-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.875rem;
+}
+.chart-page .index-calc-radio {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #2d2d30;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: #f5f3f8;
+    border: 2px solid transparent;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.chart-page .index-calc-radio:hover {
+    background: #ede9f2;
+}
+.chart-page .index-calc-radio input {
+    margin: 0;
+    width: 1.125rem;
+    height: 1.125rem;
+    accent-color: #492365;
+}
+.chart-page .index-calc-radio:has(input:checked) {
+    background: #ede5f5;
+    border-color: #492365;
+    color: #2d1a4e;
+}
+.chart-page .index-calc-label {
+    display: block;
+    font-weight: 600;
+    color: #2d1a4e;
+    margin-bottom: 0.35rem;
+    font-size: 0.9375rem;
+}
+.chart-page .index-calc-hint {
+    display: block;
+    font-size: 0.8125rem;
+    color: #6b6575;
+    margin-top: 0.25rem;
+}
+.chart-page .index-calc-form input[type="number"] {
+    width: 100%;
+    max-width: 11rem;
+    padding: 0.65rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #d4cee0;
+    border-radius: 8px;
+    color: #0d0d0d;
+    background: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.chart-page .index-calc-form input[type="number"]:hover {
+    border-color: #c9c0d4;
+}
+.chart-page .index-calc-form input[type="number"]:focus {
+    outline: none;
+    border-color: #492365;
+    box-shadow: 0 0 0 3px rgba(73, 35, 101, 0.15);
+}
+.chart-page .index-calc-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+    align-items: flex-start;
+}
+.chart-page .index-calc-gpa {
+    flex: 0 0 auto;
+}
+.chart-page .index-calc-actions {
+    margin-top: 1.25rem;
+}
+.chart-page .index-calc-submit {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #492365;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(73, 35, 101, 0.25);
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+.chart-page .index-calc-submit:hover {
+    background: #3d1d6b;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(73, 35, 101, 0.3);
+}
+.chart-page .index-calc-submit:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(73, 35, 101, 0.35);
+}
+.chart-page .index-calc-submit:active {
+    transform: translateY(0);
+}
+.chart-page .index-calc-result {
+    margin-top: 1.5rem;
+}
+.chart-page .index-calc-result-inner {
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+    color: #0d0d0d;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+.chart-page .index-calc-result-inner p {
+    margin: 0 0 0.5rem;
+}
+.chart-page .index-calc-result-inner p:last-child {
+    margin-bottom: 0;
+}
+.chart-page .index-calc-result-inner.band-moench { background: #F49EC3; }
+.chart-page .index-calc-result-inner.band-dixon { background: #F5CAAA; }
+.chart-page .index-calc-result-inner.band-tracy { background: #F4F7AB; }
+.chart-page .index-calc-result-inner.band-miller { background: #CAE2A0; }
+.chart-page .index-calc-result-inner.band-success { background: #B8DEE2; }
+.chart-page .index-calc-result-inner.index-calc-no-scholarship {
+    background: #fff;
+    border: 1px solid #e5e0ec;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.chart-page .index-calc-error {
+    color: #0d0d0d;
+    background: #fff;
+    border: 1px solid #e5e0ec;
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.chart-page .index-calc-result-inner a {
+    color: #492365;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.chart-page .table-wrap {
+    overflow-x: auto;
+    margin: 2rem 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.chart-page table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    min-width: 600px;
+}
+
+.chart-page caption {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #2d1a4e;
+    text-align: left;
+    padding: 0 0 0.75rem;
+    caption-side: top;
+}
+
+.chart-page thead th {
+    background: #492365;
+    color: #fff;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.chart-page thead th:first-child {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+/* Index chart: group headers — one dividing line between Test Score and GPA */
+.chart-page .index-chart-table .header-group th {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.6rem 0.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    vertical-align: bottom;
+}
+.chart-page .index-chart-table .header-group th.header-gpa {
+    border-left: 3px solid #fff;
+}
+.chart-page .index-chart-table .header-sub {
+    border-bottom: 2px solid #fff;
+}
+.chart-page .index-chart-table .header-sub .sub-test-score {
+    background: #492365;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    border-right: 3px solid #fff;
+    padding-right: 0.75rem;
+}
+.chart-page .index-chart-table .header-sub .sub-gpa {
+    background: #492365;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9375rem;
+}
+
+.chart-page tbody th {
+    background: rgba(73, 35, 101, 0.12);
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #2d1a4e;
+    border: 1px solid #c9c0d4;
+}
+
+.chart-page tbody td {
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+/* Index chart: ACT column (second column) matches SAT row header styling */
+.chart-page .index-chart-table tbody td:nth-child(2) {
+    background: rgba(73, 35, 101, 0.12);
+    color: #2d1a4e;
+    font-weight: 600;
+}
+.chart-page .index-chart-table tbody tr:nth-child(even) td:nth-child(2) {
+    background: #f9f9f9;
+}
+
+.chart-page tbody tr:nth-child(even) th,
+.chart-page tbody tr:nth-child(even) td {
+    background: #f9f9f9;
+}
+
+.chart-page tbody tr:hover th,
+.chart-page tbody tr:hover td {
+    background: rgba(73, 35, 101, 0.06);
+}
+
+/* International index chart: color bands (sufficient contrast with dark text) */
+.chart-page .index-chart-table tbody td.band-moench {
+    background: #F49EC3;
+    color: #0d0d0d;
+}
+.chart-page .index-chart-table tbody td.band-dixon {
+    background: #F5CAAA;
+    color: #0d0d0d;
+}
+.chart-page .index-chart-table tbody td.band-tracy {
+    background: #F4F7AB;
+    color: #0d0d0d;
+}
+.chart-page .index-chart-table tbody td.band-miller {
+    background: #CAE2A0;
+    color: #0d0d0d;
+}
+.chart-page .index-chart-table tbody td.band-success {
+    background: #B8DEE2;
+    color: #0d0d0d;
+}
+.chart-page .index-chart-table tbody td.band-below {
+    background: #fff;
+    color: #0d0d0d;
+    border: 1px solid #e0e0e0;
+}
+
+/* Scholarship table: same colors, dark text for contrast */
+.chart-page .scholarship-row.band-moench th,
+.chart-page .scholarship-row.band-moench td {
+    background: #F49EC3;
+    color: #0d0d0d;
+}
+.chart-page .scholarship-row.band-dixon th,
+.chart-page .scholarship-row.band-dixon td {
+    background: #F5CAAA;
+    color: #0d0d0d;
+}
+.chart-page .scholarship-row.band-tracy th,
+.chart-page .scholarship-row.band-tracy td {
+    background: #F4F7AB;
+    color: #0d0d0d;
+}
+.chart-page .scholarship-row.band-miller th,
+.chart-page .scholarship-row.band-miller td {
+    background: #CAE2A0;
+    color: #0d0d0d;
+}
+.chart-page .scholarship-row.band-success th,
+.chart-page .scholarship-row.band-success td {
+    background: #B8DEE2;
+    color: #0d0d0d;
+}
+
+/* Index chart: no row hover so crosshair can work */
+.chart-page .index-chart-table tbody tr:hover th,
+.chart-page .index-chart-table tbody tr:hover td {
+    background: inherit;
+}
+
+/* Index chart: crosshair — highlight row and column on cell hover */
+.chart-page .index-chart-wrap[data-hover-row="1"] tbody tr:nth-child(1) th,
+.chart-page .index-chart-wrap[data-hover-row="1"] tbody tr:nth-child(1) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="2"] tbody tr:nth-child(2) th,
+.chart-page .index-chart-wrap[data-hover-row="2"] tbody tr:nth-child(2) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="3"] tbody tr:nth-child(3) th,
+.chart-page .index-chart-wrap[data-hover-row="3"] tbody tr:nth-child(3) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="4"] tbody tr:nth-child(4) th,
+.chart-page .index-chart-wrap[data-hover-row="4"] tbody tr:nth-child(4) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="5"] tbody tr:nth-child(5) th,
+.chart-page .index-chart-wrap[data-hover-row="5"] tbody tr:nth-child(5) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="6"] tbody tr:nth-child(6) th,
+.chart-page .index-chart-wrap[data-hover-row="6"] tbody tr:nth-child(6) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="7"] tbody tr:nth-child(7) th,
+.chart-page .index-chart-wrap[data-hover-row="7"] tbody tr:nth-child(7) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="8"] tbody tr:nth-child(8) th,
+.chart-page .index-chart-wrap[data-hover-row="8"] tbody tr:nth-child(8) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="9"] tbody tr:nth-child(9) th,
+.chart-page .index-chart-wrap[data-hover-row="9"] tbody tr:nth-child(9) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="10"] tbody tr:nth-child(10) th,
+.chart-page .index-chart-wrap[data-hover-row="10"] tbody tr:nth-child(10) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="11"] tbody tr:nth-child(11) th,
+.chart-page .index-chart-wrap[data-hover-row="11"] tbody tr:nth-child(11) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="12"] tbody tr:nth-child(12) th,
+.chart-page .index-chart-wrap[data-hover-row="12"] tbody tr:nth-child(12) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="13"] tbody tr:nth-child(13) th,
+.chart-page .index-chart-wrap[data-hover-row="13"] tbody tr:nth-child(13) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="14"] tbody tr:nth-child(14) th,
+.chart-page .index-chart-wrap[data-hover-row="14"] tbody tr:nth-child(14) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="15"] tbody tr:nth-child(15) th,
+.chart-page .index-chart-wrap[data-hover-row="15"] tbody tr:nth-child(15) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="16"] tbody tr:nth-child(16) th,
+.chart-page .index-chart-wrap[data-hover-row="16"] tbody tr:nth-child(16) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="17"] tbody tr:nth-child(17) th,
+.chart-page .index-chart-wrap[data-hover-row="17"] tbody tr:nth-child(17) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="18"] tbody tr:nth-child(18) th,
+.chart-page .index-chart-wrap[data-hover-row="18"] tbody tr:nth-child(18) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="19"] tbody tr:nth-child(19) th,
+.chart-page .index-chart-wrap[data-hover-row="19"] tbody tr:nth-child(19) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="20"] tbody tr:nth-child(20) th,
+.chart-page .index-chart-wrap[data-hover-row="20"] tbody tr:nth-child(20) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="21"] tbody tr:nth-child(21) th,
+.chart-page .index-chart-wrap[data-hover-row="21"] tbody tr:nth-child(21) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="22"] tbody tr:nth-child(22) th,
+.chart-page .index-chart-wrap[data-hover-row="22"] tbody tr:nth-child(22) td { background: rgba(73, 35, 101, 0.14) !important; }
+.chart-page .index-chart-wrap[data-hover-row="23"] tbody tr:nth-child(23) th,
+.chart-page .index-chart-wrap[data-hover-row="23"] tbody tr:nth-child(23) td { background: rgba(73, 35, 101, 0.14) !important; }
+
+.chart-page .index-chart-wrap[data-hover-col="1"] .index-chart-table thead tr:nth-child(2) th:first-child,
+.chart-page .index-chart-wrap[data-hover-col="2"] .index-chart-table thead tr:nth-child(2) th:first-child,
+.chart-page .index-chart-wrap[data-hover-col="1"] .index-chart-table tbody th:nth-child(1),
+.chart-page .index-chart-wrap[data-hover-col="1"] .index-chart-table tbody td:nth-child(1),
+.chart-page .index-chart-wrap[data-hover-col="2"] .index-chart-table tbody th:nth-child(2),
+.chart-page .index-chart-wrap[data-hover-col="2"] .index-chart-table tbody td:nth-child(2) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="3"] .index-chart-table thead tr:nth-child(2) th:nth-child(2),
+.chart-page .index-chart-wrap[data-hover-col="3"] .index-chart-table tbody td:nth-child(3),
+.chart-page .index-chart-wrap[data-hover-col="3"] .index-chart-table tbody th:nth-child(3) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="4"] .index-chart-table thead tr:nth-child(2) th:nth-child(3),
+.chart-page .index-chart-wrap[data-hover-col="4"] .index-chart-table tbody td:nth-child(4),
+.chart-page .index-chart-wrap[data-hover-col="4"] .index-chart-table tbody th:nth-child(4) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="5"] .index-chart-table thead tr:nth-child(2) th:nth-child(4),
+.chart-page .index-chart-wrap[data-hover-col="5"] .index-chart-table tbody td:nth-child(5),
+.chart-page .index-chart-wrap[data-hover-col="5"] .index-chart-table tbody th:nth-child(5) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="6"] .index-chart-table thead tr:nth-child(2) th:nth-child(5),
+.chart-page .index-chart-wrap[data-hover-col="6"] .index-chart-table tbody td:nth-child(6),
+.chart-page .index-chart-wrap[data-hover-col="6"] .index-chart-table tbody th:nth-child(6) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="7"] .index-chart-table thead tr:nth-child(2) th:nth-child(6),
+.chart-page .index-chart-wrap[data-hover-col="7"] .index-chart-table tbody td:nth-child(7),
+.chart-page .index-chart-wrap[data-hover-col="7"] .index-chart-table tbody th:nth-child(7) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="8"] .index-chart-table thead tr:nth-child(2) th:nth-child(7),
+.chart-page .index-chart-wrap[data-hover-col="8"] .index-chart-table tbody td:nth-child(8),
+.chart-page .index-chart-wrap[data-hover-col="8"] .index-chart-table tbody th:nth-child(8) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="9"] .index-chart-table thead tr:nth-child(2) th:nth-child(8),
+.chart-page .index-chart-wrap[data-hover-col="9"] .index-chart-table tbody td:nth-child(9),
+.chart-page .index-chart-wrap[data-hover-col="9"] .index-chart-table tbody th:nth-child(9) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="10"] .index-chart-table thead tr:nth-child(2) th:nth-child(9),
+.chart-page .index-chart-wrap[data-hover-col="10"] .index-chart-table tbody td:nth-child(10),
+.chart-page .index-chart-wrap[data-hover-col="10"] .index-chart-table tbody th:nth-child(10) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="11"] .index-chart-table thead tr:nth-child(2) th:nth-child(10),
+.chart-page .index-chart-wrap[data-hover-col="11"] .index-chart-table tbody td:nth-child(11),
+.chart-page .index-chart-wrap[data-hover-col="11"] .index-chart-table tbody th:nth-child(11) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="12"] .index-chart-table thead tr:nth-child(2) th:nth-child(11),
+.chart-page .index-chart-wrap[data-hover-col="12"] .index-chart-table tbody td:nth-child(12),
+.chart-page .index-chart-wrap[data-hover-col="12"] .index-chart-table tbody th:nth-child(12) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="13"] .index-chart-table thead tr:nth-child(2) th:nth-child(12),
+.chart-page .index-chart-wrap[data-hover-col="13"] .index-chart-table tbody td:nth-child(13),
+.chart-page .index-chart-wrap[data-hover-col="13"] .index-chart-table tbody th:nth-child(13) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="14"] .index-chart-table thead tr:nth-child(2) th:nth-child(13),
+.chart-page .index-chart-wrap[data-hover-col="14"] .index-chart-table tbody td:nth-child(14),
+.chart-page .index-chart-wrap[data-hover-col="14"] .index-chart-table tbody th:nth-child(14) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="15"] .index-chart-table thead tr:nth-child(2) th:nth-child(14),
+.chart-page .index-chart-wrap[data-hover-col="15"] .index-chart-table tbody td:nth-child(15),
+.chart-page .index-chart-wrap[data-hover-col="15"] .index-chart-table tbody th:nth-child(15) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="16"] .index-chart-table thead tr:nth-child(2) th:nth-child(15),
+.chart-page .index-chart-wrap[data-hover-col="16"] .index-chart-table tbody td:nth-child(16),
+.chart-page .index-chart-wrap[data-hover-col="16"] .index-chart-table tbody th:nth-child(16) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="17"] .index-chart-table thead tr:nth-child(2) th:nth-child(16),
+.chart-page .index-chart-wrap[data-hover-col="17"] .index-chart-table tbody td:nth-child(17),
+.chart-page .index-chart-wrap[data-hover-col="17"] .index-chart-table tbody th:nth-child(17) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="18"] .index-chart-table thead tr:nth-child(2) th:nth-child(17),
+.chart-page .index-chart-wrap[data-hover-col="18"] .index-chart-table tbody td:nth-child(18),
+.chart-page .index-chart-wrap[data-hover-col="18"] .index-chart-table tbody th:nth-child(18) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="19"] .index-chart-table thead tr:nth-child(2) th:nth-child(18),
+.chart-page .index-chart-wrap[data-hover-col="19"] .index-chart-table tbody td:nth-child(19),
+.chart-page .index-chart-wrap[data-hover-col="19"] .index-chart-table tbody th:nth-child(19) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="20"] .index-chart-table thead tr:nth-child(2) th:nth-child(19),
+.chart-page .index-chart-wrap[data-hover-col="20"] .index-chart-table tbody td:nth-child(20),
+.chart-page .index-chart-wrap[data-hover-col="20"] .index-chart-table tbody th:nth-child(20) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="21"] .index-chart-table thead tr:nth-child(2) th:nth-child(20),
+.chart-page .index-chart-wrap[data-hover-col="21"] .index-chart-table tbody td:nth-child(21),
+.chart-page .index-chart-wrap[data-hover-col="21"] .index-chart-table tbody th:nth-child(21) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="22"] .index-chart-table thead tr:nth-child(2) th:nth-child(21),
+.chart-page .index-chart-wrap[data-hover-col="22"] .index-chart-table tbody td:nth-child(22),
+.chart-page .index-chart-wrap[data-hover-col="22"] .index-chart-table tbody th:nth-child(22) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+.chart-page .index-chart-wrap[data-hover-col="23"] .index-chart-table thead tr:nth-child(2) th:nth-child(22),
+.chart-page .index-chart-wrap[data-hover-col="23"] .index-chart-table tbody td:nth-child(23),
+.chart-page .index-chart-wrap[data-hover-col="23"] .index-chart-table tbody th:nth-child(23) { background: rgba(73, 35, 101, 0.2) !important; color: inherit; }
+
+.chart-page .no-award {
+    color: #4b5563;
+    font-style: italic;
+}
+
+.chart-page .note {
+    margin-top: 2rem;
+    padding: 1rem 1.25rem;
+    background: #f0eef3;
+    border-left: 4px solid #492365;
+    font-size: 0.9375rem;
+    color: #2d2d30;
+}
+
+.chart-page .note p {
+    margin: 0 0 0.5rem;
+}
+
+.chart-page .note p:last-child {
+    margin-bottom: 0;
+}
+
+/* ========== Mobile optimization ========== */
+
+/* Container: ensure side spacing on small screens */
+@media (max-width: 480px) {
+    .chart-page .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+    .chart-page h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .chart-page .lead {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .chart-page .index-calculator {
+        padding: 1.25rem 1rem;
+        margin-bottom: 2rem;
+    }
+    .chart-page .index-calculator h2 {
+        font-size: 1.25rem;
+    }
+    .chart-page .index-calc-row {
+        gap: 1.25rem;
+    }
+    .chart-page .table-wrap {
+        margin: 1.5rem 0;
+    }
+    .chart-page .note {
+        margin-top: 1.5rem;
+        padding: 0.875rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Small tablet / large phone */
+@media (max-width: 640px) {
+    .chart-page h1 {
+        font-size: 1.375rem;
+    }
+    .chart-page .index-calculator {
+        padding: 1rem 0.875rem;
+    }
+    .chart-page .index-calc-row {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .chart-page .index-calc-form .index-calc-fieldset {
+        margin-bottom: 0.75rem;
+    }
+    .chart-page .index-calc-form input[type="number"] {
+        max-width: 100%;
+        min-height: 2.75rem;
+        font-size: 1rem; /* prevents zoom on iOS when focus */
+    }
+    .chart-page .index-calc-gpa input[type="number"] {
+        max-width: 100%;
+    }
+    .chart-page .index-calc-submit {
+        width: 100%;
+        min-height: 2.75rem;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+    .chart-page .index-calc-actions {
+        margin-top: 0.75rem;
+    }
+    .chart-page .index-calc-result-inner,
+    .chart-page .index-calc-error {
+        padding: 1rem;
+    }
+    .chart-page table {
+        font-size: 0.8125rem;
+        min-width: 560px;
+    }
+    .chart-page caption {
+        font-size: 1.0625rem;
+        padding-bottom: 0.5rem;
+    }
+    .chart-page thead th,
+    .chart-page tbody th,
+    .chart-page tbody td {
+        padding: 0.4rem 0.35rem;
+    }
+    .chart-page .index-chart-table .header-group th,
+    .chart-page .index-chart-table .header-sub .sub-test-score,
+    .chart-page .index-chart-table .header-sub .sub-gpa {
+        font-size: 0.75rem;
+    }
+    .chart-page tbody th {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    .chart-page .index-chart-table tbody td:nth-child(2) {
+        font-size: 0.75rem;
+    }
+    .chart-page .note {
+        padding: 0.75rem 0.875rem;
+    }
+}
+
+/* Small phone */
+@media (max-width: 480px) {
+    .chart-page h1 {
+        font-size: 1.25rem;
+        line-height: 1.3;
+    }
+    .chart-page .lead {
+        font-size: 0.9375rem;
+        margin-bottom: 1.25rem;
+    }
+    .chart-page .index-calculator {
+        padding: 0.875rem 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+    .chart-page .index-calculator h2 {
+        font-size: 1.125rem;
+    }
+    .chart-page .index-calculator-desc {
+        font-size: 0.9375rem;
+        margin-bottom: 1rem;
+    }
+    .chart-page .index-calc-form input[type="number"] {
+        min-height: 2.5rem;
+    }
+    .chart-page .index-calc-submit {
+        min-height: 2.5rem;
+    }
+    .chart-page .index-calc-hint {
+        font-size: 0.8125rem;
+    }
+    .chart-page .table-wrap {
+        margin: 1.25rem 0;
+    }
+    .chart-page table {
+        font-size: 0.75rem;
+        min-width: 520px;
+    }
+    .chart-page thead th,
+    .chart-page tbody th,
+    .chart-page tbody td {
+        padding: 0.35rem 0.25rem;
+    }
+    .chart-page .index-chart-table .header-group th,
+    .chart-page .index-chart-table .header-sub .sub-test-score,
+    .chart-page .index-chart-table .header-sub .sub-gpa {
+        font-size: 0.6875rem;
+    }
+    .chart-page tbody th {
+        padding: 0.35rem 0.4rem;
+        font-size: 0.6875rem;
+    }
+    .chart-page .index-chart-table tbody td:nth-child(2) {
+        font-size: 0.6875rem;
+    }
+    .chart-page .note {
+        padding: 0.625rem 0.75rem;
+        font-size: 0.8125rem;
+    }
+    .chart-page .note p {
+        margin-bottom: 0.375rem;
+    }
+}
+
+/* ========== Landing page (index.html) ========== */
+.chart-landing {
+    min-height: 100vh;
+    padding: 2rem 0;
+    background: linear-gradient(180deg, #faf9fc 0%, #f3f0f7 100%);
+}
+.chart-landing .container {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.chart-landing-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.chart-landing-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d1a4e;
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.02em;
+}
+.chart-landing-lead {
+    font-size: 1.125rem;
+    color: #4a4652;
+    line-height: 1.6;
+    margin: 0;
+}
+.chart-landing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.chart-landing-card {
+    display: block;
+    padding: 1.5rem 1.25rem;
+    background: #fff;
+    border: 1px solid #e5e0ec;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(45, 26, 78, 0.06);
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    border-left: 4px solid #492365;
+}
+.chart-landing-card:hover {
+    box-shadow: 0 8px 24px rgba(45, 26, 78, 0.12);
+    transform: translateY(-2px);
+    border-left-color: #3d1d6b;
+}
+.chart-landing-card:focus {
+    outline: 2px solid #492365;
+    outline-offset: 2px;
+}
+.chart-landing-card-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #492365;
+    margin-bottom: 0.5rem;
+}
+.chart-landing-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2d1a4e;
+    margin: 0 0 0.5rem;
+    line-height: 1.3;
+}
+.chart-landing-card p {
+    font-size: 0.9375rem;
+    color: #4a4652;
+    line-height: 1.5;
+    margin: 0 0 1rem;
+}
+.chart-landing-card-cta {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #492365;
+}
+.chart-landing-card:hover .chart-landing-card-cta {
+    text-decoration: underline;
+}
+.chart-landing-footer {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e0ec;
+}
+.chart-landing-footer p {
+    font-size: 0.875rem;
+    color: #6b6575;
+    margin: 0;
+    line-height: 1.5;
+}
+.chart-landing-footer a {
+    color: #492365;
+    text-decoration: underline;
+}
+.chart-landing-footer a:hover {
+    color: #3d1d6b;
+}
+

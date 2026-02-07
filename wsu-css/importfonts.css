@@ -1,0 +1,69 @@
+/*  framework version  */
+
+/* Trade Gothic */
+@font-face {font-family: 'TradeGothicLT';src: url('webfonts/2730EE_11_0.eot');src: url('webfonts/2730EE_11_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_11_0.woff') format('woff'),url('webfonts/2730EE_11_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Condensed No. 18 */
+@font-face {font-family: 'TradeGothicLT-CondEighteen';src: url('webfonts/2730EE_12_0.eot');src: url('webfonts/2730EE_12_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_12_0.woff') format('woff'),url('webfonts/2730EE_12_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Light */
+@font-face {font-family: 'TradeGothicLT-Light';src: url('webfonts/2730EE_13_0.eot');src: url('webfonts/2730EE_13_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_13_0.woff') format('woff'),url('webfonts/2730EE_13_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Light Oblique */
+@font-face {font-family: 'TradeGothicLT-LightOblique';src: url('webfonts/2730EE_14_0.eot');src: url('webfonts/2730EE_14_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_14_0.woff') format('woff'),url('webfonts/2730EE_14_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Bold */
+@font-face {font-family: 'TradeGothicLT-Bold';src: url('webfonts/2730EE_15_0.eot');src: url('webfonts/2730EE_15_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_15_0.woff') format('woff'),url('webfonts/2730EE_15_0.ttf') format('truetype');}
+
+/* Trade Gothic Bold No. 2 Oblique */
+@font-face {font-family: 'TradeGothicLTCom-Bd2Obl';src: url('webfonts/2730EE_0_0.eot');src: url('webfonts/2730EE_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_0_0.woff') format('woff'),url('webfonts/2730EE_0_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Bold No. 2 */
+@font-face {font-family: 'TradeGothicLTCom-Bd2';src: url('webfonts/2730EE_1_0.eot');src: url('webfonts/2730EE_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_1_0.woff') format('woff'),url('webfonts/2730EE_1_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Condensed No. 18 Oblique */
+@font-face {font-family: 'TradeGothicLTCom-Cn18Obl';src: url('webfonts/2730EE_2_0.eot');src: url('webfonts/2730EE_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_2_0.woff') format('woff'),url('webfonts/2730EE_2_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Bold Condensed No. 20 */
+@font-face {font-family: 'TradeGothicLTCom-BdCn20';src: url('webfonts/2730EE_3_0.eot');src: url('webfonts/2730EE_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_3_0.woff') format('woff'),url('webfonts/2730EE_3_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Bold Condensed No. 20 Oblique */
+@font-face {font-family: 'TradeGothicLTCom-BdCn20Obl';src: url('webfonts/2730EE_4_0.eot');src: url('webfonts/2730EE_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_4_0.woff') format('woff'),url('webfonts/2730EE_4_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Oblique */
+@font-face {font-family: 'TradeGothicLTCom-Obl';src: url('webfonts/2730EE_5_0.eot');src: url('webfonts/2730EE_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_5_0.woff') format('woff'),url('webfonts/2730EE_5_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Bold Oblique */
+@font-face {font-family: 'TradeGothicLTCom-BoldObl';src: url('webfonts/2730EE_6_0.eot');src: url('webfonts/2730EE_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_6_0.woff') format('woff'),url('webfonts/2730EE_6_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Extended */
+@font-face {font-family: 'TradeGothicLTStd-Extended';src: url('webfonts/2730EE_7_0.eot');src: url('webfonts/2730EE_7_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_7_0.woff') format('woff'),url('webfonts/2730EE_7_0.ttf') format('truetype');}
+ 
+/* Trade Gothic Bold Extended */
+@font-face {font-family: 'TradeGothicLTStd-BoldExt';src: url('webfonts/2730EE_8_0.eot');src: url('webfonts/2730EE_8_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_8_0.woff') format('woff'),url('webfonts/2730EE_8_0.ttf') format('truetype');}
+ 
+/*---------------------------------------------------------------------------------------*/
+
+/* PMN Caecilia 85 Heavy */
+@font-face {font-family: 'CaeciliaLTStd-Heavy';src: url('webfonts/2730EE_9_0.eot');src: url('webfonts/2730EE_9_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_9_0.woff') format('woff'),url('webfonts/2730EE_9_0.ttf') format('truetype');}
+ 
+/* PMN Caecilia 86 Heavy Italic */
+@font-face {font-family: 'CaeciliaLTStd-HeavyItalic';src: url('webfonts/2730EE_A_0.eot');src: url('webfonts/2730EE_A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_A_0.woff') format('woff'),url('webfonts/2730EE_A_0.ttf') format('truetype');}
+ 
+/* PMN Caecilia 75 Bold */
+@font-face {font-family: 'CaeciliaLTStd-Bold';src: url('webfonts/2730EE_B_0.eot');src: url('webfonts/2730EE_B_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_B_0.woff') format('woff'),url('webfonts/2730EE_B_0.ttf') format('truetype');}
+ 
+/* PMN Caecilia 46 Light Italic */
+@font-face {font-family: 'CaeciliaLTStd-LightItalic';src: url('webfonts/2730EE_C_0.eot');src: url('webfonts/2730EE_C_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_C_0.woff') format('woff'),url('webfonts/2730EE_C_0.ttf') format('truetype');}
+ 
+/* PMN Caecilia 55 Roman */
+@font-face {font-family: 'CaeciliaLTStd-Roman';src: url('webfonts/2730EE_D_0.eot');src: url('webfonts/2730EE_D_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_D_0.woff') format('woff'),url('webfonts/2730EE_D_0.ttf') format('truetype');}
+ 
+/* PMN Caecilia 56 Italic */
+@font-face {font-family: 'CaeciliaLTStd-Italic';src: url('webfonts/2730EE_E_0.eot');src: url('webfonts/2730EE_E_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_E_0.woff') format('woff'),url('webfonts/2730EE_E_0.ttf') format('truetype');}
+ 
+/* PMN Caecilia 76 Bold Italic */
+@font-face {font-family: 'CaeciliaLTStd-BoldItalic';src: url('webfonts/2730EE_F_0.eot');src: url('webfonts/2730EE_F_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_F_0.woff') format('woff'),url('webfonts/2730EE_F_0.ttf') format('truetype');}
+ 
+/* PMN Caecilia 45 Light */
+@font-face {font-family: 'CaeciliaLTStd-Light';src: url('webfonts/2730EE_10_0.eot');src: url('webfonts/2730EE_10_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2730EE_10_0.woff') format('woff'),url('webfonts/2730EE_10_0.ttf') format('truetype');}
